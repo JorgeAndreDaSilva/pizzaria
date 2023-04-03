@@ -1,0 +1,170 @@
+
+/*Reset CSS para tirar todas as margens dos elementos */
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* Estilização do HEADER - cabeçalho*/
+
+.cabecalho{
+   background-color: red;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.cabecalho > img {
+    height: 60px;
+
+}
+
+.menu{
+    display: flex;
+}
+.menu > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+.menu > li:hover {
+   background-color: darkred;
+}
+
+/*Estilizando nossos banner*/
+
+.banner{
+    background-image: url(../img/pizza.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px  rgb(52, 228, 52);
+}
+.botao-1{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner > h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+}
+.botao-1:hover{
+    background-color: white;
+    color: black;
+}
+.meio{
+   text-align: center;
+   max-width: 1300px;
+   margin: auto;
+}
+.meio > .h2{
+    color: green;
+}
+.linha{
+    background: rgb(255,106,106);
+    background: radial-gradient(circle, rgba(255,106,106,1) 0%, rgba(255,0,0,0.44030112044817926) 53%, rgba(255,106,106,0) 100%);
+    border: 0;
+    padding: 1px;
+}
+.sabores{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sabor1
+{
+    background-color: green;
+    margin: 10px;
+    margin: 0 auto;
+  
+    border-radius: 10px 10px 0px 0px;
+}
+.nome{
+    color: white;
+}
+.preco{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.sabor1 > img {
+    border-radius: 10px 10px 0px 0px;
+    
+    
+}
+.rodape{
+    border: solid black;
+    border-top: 5px;
+    background-color: red;
+    display: flex;
+}
+.h2-1{
+    color: green;
+}
+.linha-1{
+    background: rgb(255,106,106);
+    background: radial-gradient(circle, rgba(255,106,106,1) 0%, rgba(255,0,0,0.44030112044817926) 53%, rgba(255,106,106,0) 100%);
+    border: 0;
+    padding: 1px;
+}
+
+.promocoes
+{
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+}
+
+.promocoes::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px){
+    .sabores{
+        flex-direction: column;
+    }
+    .sabor1{
+    min-width: 100%;
+    }
+}
+footer{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+.redesocial > li > a{
+color: white;
+text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
